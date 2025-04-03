@@ -6,6 +6,7 @@ import dev.architectury.event.events.common.EntityEvent;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
@@ -13,7 +14,7 @@ public class RegistriesMod {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(SimpleOrpheus.MOD_ID, Registries.ITEM);
     public static final RegistrySupplier<Item> ORPHEUS_ITEM = ITEMS.register("orpheus", () ->
-            new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant()));
+            new Item(new Item.Properties().stacksTo(1).arch$tab(CreativeModeTabs.TOOLS_AND_UTILITIES).rarity(Rarity.EPIC).fireResistant()));
     public static void init() {
 
         ITEMS.register();
