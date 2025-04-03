@@ -1,0 +1,42 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "simpleorpheus"
+version = "${version}"
+displayName = "Simple Orpheus"
+authors = "ECarrascon"
+description = '''
+Obtain KeepInventory in survival!
+'''
+logoFile = "icon.png"
+
+[[dependencies.simpleorpheus]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simpleorpheus]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.simpleorpheus]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.2.14,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.simpleorpheus]]
+modId = "carrasconlib"
+mandatory = true
+versionRange = "[1.20.1-0.1,)"
+ordering = "AFTER"
+side = "BOTH"
